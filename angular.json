@@ -117,6 +117,14 @@
               "devServerTarget": "jamstack2:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/jamstack2",
+            "netlifyToken": "ba89036181075b2429241d24aefa9acf5f41c1c4c73fe98a5d4bdb49f61d6dfa",
+            "siteId": "d9cd8609-7cc9-4d35-886d-431c34c685a6"
+          }
         }
       }
     }
