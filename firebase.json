@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "jamstack2",
+      "public": "dist/jamstack2",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "jamstack2": {
+      "hosting": {
+        "jamstack2": [
+          "jamstack2"
+        ]
+      }
+    }
+  }
+}
