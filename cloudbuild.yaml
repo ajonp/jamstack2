@@ -1,0 +1,14 @@
+# Install dependencies
+steps:
+- name: node:10.15.1
+  entrypoint: npm
+  args: ['install']
+
+# Run Build command
+- name: node:10.15.1
+  entrypoint: npm
+  args: ['run', 'build']
+
+# Upload to Storage Bucket
+- name: gcr.io/cloud-builders/gsutil
+  args: ["-m", "rsync", "-r", "-c", "-d", "./dist/jamstack2/", "gs://jamstack2"]
